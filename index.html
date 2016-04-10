@@ -1,1 +1,157 @@
-My Page
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Wiki War Generator</title>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+                <link rel="SHORTCUT ICON" HREF="/favicon.png">
+	</head>
+
+	<body>
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div class="wrap">
+
+			<section class="intro">
+				<div class="head">
+					<h1 class="logo">Create Your Own War!</h1>
+					<p>Build your dream battle with this Wiki War Generator. Upload a splash image and add flags, then fill out the relevant info and we will do the rest!</p>
+				</div>
+			</section>
+
+			<section class="mainForm">
+				<div class="createForm">
+					<ul id="atrForm">
+						<li><strong>Title</strong>
+							<input id="titleBox"</input></li>
+						<li><strong>Date</strong>
+							<input id="dateBox"</input></li>
+						<li><strong>Location</strong>
+							<input id="locBox"</input></li>
+						<li><strong>Result</strong>
+							<input id="winBox"</input></li>
+					</ul>
+
+					<div class="twoseg">
+					<strong>Image</strong>
+						<input id="imageLoader" type="file" name="imageLoader"></input>
+						<p>Image caption</p>
+						<input id="imgCaption"</input></li>
+					</div>
+
+					<div class="flag">
+						<strong>Side 1 Flag</strong>
+							<input id="flagLoader" type="file" name="flagLoader"></input>
+						<strong>Side 2 Flag</strong>
+							<input id="flagLoader1" type="file" name="flagLoader1"></input>
+					</div>
+
+					<div class="twoseg">
+					<strong>Belligerents</strong>
+						<div class="liner">
+							<input id="bel1" placeholder="Side 1"></input>
+							<input id="bel2" placeholder="Side 2"></input>
+						</div>
+					</div>
+
+					<div class="twoseg">
+					<strong>Commanders</strong>
+						<div class="buttonHolder">
+							<p><a id="AddCom" class="buttonB" href="" title="Add more">+</a></p>
+							<p><a id="MinusCom" class="buttonB" href="" title="Remove one">-</a></p>
+						</div>
+						<div class="liner">
+								<input id="Leaders1" placeholder="Side 1"></input>
+								<input id="Leaders2" placeholder="Side 2"></input>
+						</div>
+
+						<div id ="LeadersA" class="liner">
+								<input id="Leaders1a" placeholder="Side 1"></input>
+								<input id="Leaders2a" placeholder="Side 2"></input>
+						</div>
+					</div>
+
+					<div class="twoseg">
+					<strong>Strength</strong>
+						<div class="buttonHolder">
+							<p><a id="AddStr" class="buttonB" href="" title="Add more">+</a></p>
+							<p><a id="MinusStr" class="buttonB" href="" title="Remove one">-</a></p>
+						</div>
+						<div class="liner">
+							<input id="strength1" placeholder="Side 1"></input>
+							<input id="strength2" placeholder="Side 2"></input>
+						</div>
+
+						<div id ="StrengthA" class="liner">
+								<input id="strength1a" placeholder="Side 1"></input>
+								<input id="strength2a" placeholder="Side 2"></input>
+						</div>
+					</div>
+
+					<div class="twoseg">
+					<strong>Casualties and Losses</strong>
+						<div class="buttonHolder">
+							<p><a id="AddLoss" class="buttonB" href=""  title="Add more">+</a></p>
+							<p><a id="MinusLoss" class="buttonB" href="" title="Remove one">-</a></p>
+						</div>
+						<div class="liner">
+							<input id="loss1" placeholder="Side 1"></input>
+							<input id="loss2" placeholder="Side 2"></input>
+						</div>
+
+						<div id ="LossA" class="liner">
+								<input id="loss1a" placeholder="Side 1"></input>
+								<input id="loss2a" placeholder="Side 2"></input>
+						</div>
+					</div>
+
+				</div>
+			 		<a href="flags" id="flagMaker"><img src="images/flagmaker.jpg"></img></a>
+			</section>
+
+			<section class="resultHolder">
+				<div class="shareContainer">
+					<a id="saveBtn" class="button" onclick="$('#saveBtn').attr('href', myCanvas.toDataURL());" download="wiki_war.png" href="#" target="_blank">Download</a>
+<br />
+					<a id="uploadBtn" class="button" href="" title="Upload to Imgur">Upload to Imgur</a>
+<br />
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.wikiwarcreator.com" data-text="An epic battle..." data-size="large" data-hashtags="wikiwarcreator">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<br />
+					<div class="fb-like" data-href="http://www.wikiwarcreator.com" data-width="80" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				</div>
+
+				<div id="cvsContainer" class="canvasContainer">
+					<canvas id="myCanvas" width="320" height="680">
+						<!-- Insert fallback content here -->
+			 			Your browser does not support HTML5 Canvas.
+					</canvas>
+				</div>
+			</section>
+
+			<section id="side">
+					<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=wikiwarcrea0a-20&o=1&p=11&l=ez&f=ifr&f=ifr&linkID=RHE6MCAKMN5KOU5M" width="120" height="600" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;"></iframe>
+
+
+
+				</section>
+
+				<footer>
+					<div class="cp">
+						<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+					</div>
+				</footer>
+		</div>
+	</body>
+</html>
