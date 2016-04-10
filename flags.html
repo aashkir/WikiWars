@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Wiki War Generator</title>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/flagScript.js"></script>
+                <link rel="SHORTCUT ICON" HREF="/favicon.png">
+	</head>
+
+	<body>
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div class="wrap" style="height:500px;">
+
+			<section class="intro">
+				<div class="head">
+					<h1 class="logo">Create Your Own Flag Icon!</h1>
+					<p>Upload an image and turn it into a sleek icon sprite. (16 x 11px)</p>
+				</div>
+			</section>
+
+			<section class="mainForm">
+				<div class="createForm">
+					<div class="twoseg">
+					<strong>Image</strong>
+						<input id="flegLoader" type="file" name="flegLoader"></input>
+					</div>
+
+					<div class="twoseg">
+					<strong>Add a Flag Gloss</strong>
+						<form action="">
+						  <input type="radio" id="radio_1" name="type" value="dGloss"> Dark Gloss<br>
+						  <input type="radio" id="radio_2" name="type1" value="lGloss"> Light Gloss<br>
+						</form>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="resultHolder">
+				<div class="shareContainer">
+					<a id="dlBtn" class="button" href="">Download Flag</a>
+					<br />
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.wikiwarcreator.com" data-text="An epic battle..." data-size="large" data-hashtags="wikiwarcreator">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<br />
+					<div class="fb-like" data-href="http://www.wikiwarcreator.com" data-width="80" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				</div>
+
+				<div id="cvsContainer" class="canvasContainer">
+					<canvas id="flagCanvas" width="160" height="110">
+						<!-- Insert fallback content here -->
+			 			Your browser does not support HTML5 Canvas.
+					</canvas>
+				</div>
+			</section>
+
+				<footer>
+				<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_enable_interest_ads = "true";
+amzn_assoc_tracking_id = "wikiwarcrea0a-20";
+amzn_assoc_ad_mode = "auto";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_linkid = "9ced5046114ac5a93c00648abeba72bc";
+amzn_assoc_rows = "1";
+amzn_assoc_emphasize_categories = "13900861,2335752011,13900871,172282,979455011,195209011,301668,16261631,468642";
+amzn_assoc_fallback_mode = {"type":"search","value":"mouse"};
+amzn_assoc_default_category = "PCHardware";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+					<div class="cp">
+						<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+					</div>
+				</footer>
+		</div>
+	</body>
+</html>

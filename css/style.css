@@ -1,0 +1,207 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body { height: 100%; width: 100%; }
+
+
+body {
+	background: #EDEDED;
+	font-family: verdana,arial,helvetica,sans-serif !important;
+}
+
+.intro {
+
+}
+
+.mainForm {
+	width: 252px;
+	float: left;
+}
+.resultHolder {
+	width: 45%;
+	float: left;
+	padding-left: 10px;
+}
+
+#flagMaker{
+	clear: both;
+}
+
+#flagMaker img{
+	border: 1px;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+#side {
+float: right;
+margin-top: 10px;
+}
+
+.wrap {
+	background: white;
+	border: 1px solid #a7d7f9;
+	padding: 15px;
+	height: 905px;
+	top: 1%;
+	margin: 0 auto; 
+	width: 880px;
+	position: relative;
+}
+
+.head {
+	border:1px solid #aaaaaa;
+	background-color:#f9f9f9;
+	padding: 5px;
+}
+
+.createForm{
+	background: white;
+	border:1px solid #aaaaaa;
+	background-color:#f9f9f9;
+	padding: 5px;
+	width: 240px;
+	margin-top: 10px;
+	overflow:hidden;
+}
+
+.shareContainer{
+	width: 12%;
+	float: right;
+	padding-top: 10px;
+}
+
+ul {
+	text-decoration: none;
+	list-style:none;
+}
+.createForm ul {
+	padding-bottom: 3px;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.twoseg {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.liner {
+	width: 100%;
+	height: 25px;
+}
+
+.liner input {
+	width: 47%;
+}
+
+.twoseg p{
+	font-style: italic;
+	font-size: 12px;
+}
+
+.buttonHolder{
+	width: 40px;
+	height: 17px;
+	float: right;
+	margin-top: 2px;
+}
+
+.createForm #atrForm li input {
+	float: right;
+}
+
+input.flag{
+	float: right;
+}
+
+.flag{
+	padding-bottom: 6px;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+a.button:hover {
+	background: #2488f5;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.button {
+	background: #185da8;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	display: block;
+	padding: 10px;
+	width: 80px;
+}
+
+a.buttonB {
+	background: white;
+	text-decoration: none;
+	border: 1px solid #a7d7f9;
+	border-radius: 2px;
+	display: block;
+	padding: 3px;
+	width: 10px;
+	height: 10px;
+	text-align: center;
+	float: right;
+	line-height: 7px;
+}
+
+a.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+a.buttonB:hover {
+	background: #ADD8E6;
+}
+
+.buttonB{
+	margin-left: 2px;
+}
+
+.canvasContainer{
+	/*background: rgb(245, 255, 250) none repeat scroll 0% 0%;*/
+	border: 1px solid rgb(206, 242, 224);
+	padding: 5px;
+	width: 30%;
+	margin-top: 10px;
+	display: table;
+}
+
+#myCanvas { display : block;}
+
+
+#flagCanvas {
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	clear: both;
+	margin-top: -50px;
+	margin: auto;
+	position:absolute;
+	bottom: 0;
+	margin-left: -16px;
+	padding: 2px;
+}
+
+footer .cp{
+	border:1px solid #aaaaaa;
+	background-color:#f9f9f9;
+	line-height: 1.2em;
+	text-align: center;
+	width: 80%;
+	padding: 5px;
+	margin: auto;
+	bottom: 0;
+}
+
+#imgCaption {width: 100%;}
