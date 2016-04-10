@@ -175,7 +175,7 @@ $(document).ready(function() {
 		            type: 'base64',
 		            name: 'wiki_war.jpg',
 		            title: titleBox.val(),
-		            description: 'Made using http://wikiwarcreator.com/',
+		            description: 'Made using http://poisonrune.github.io/WikiWars/',
 		            image: img
 		        },
 		        dataType: 'json'
@@ -284,13 +284,13 @@ $(document).ready(function() {
 
 		// bottom logo
 		context.fillStyle = "rgb(200, 200, 200)";
-		context.fillRect( canvasWidth/2, canvasHeight + additionYCom + additionYStr + additionYLoss - 15, canvasWidth/2 -5, 10);
+		context.fillRect( canvasWidth/2 - 5, canvasHeight + additionYCom + additionYStr + additionYLoss - 15, canvasWidth/2 , 10);
 
 		//Draw caption onto screen
 	 	context.fillStyle = "rgb(0, 0, 0)";
 	 	context.font = "9px arial";
 	 	context.textAlign="center";
-	 	context.fillText("wikiwarcreator.com", (canvasWidth/2 + 80), canvasHeight + additionYCom + additionYStr + additionYLoss - 7);
+	 	context.fillText("http://poisonrune.github.io/WikiWars/", (canvasWidth/2 + 75), canvasHeight + additionYCom + additionYStr + additionYLoss - 7);
 
 	 	// UI
 

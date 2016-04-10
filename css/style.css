@@ -47,7 +47,7 @@ margin-top: 10px;
 	height: 905px;
 	top: 1%;
 	margin: 0 auto; 
-	width: 880px;
+	width: 720px;
 	position: relative;
 }
 
@@ -68,7 +68,7 @@ margin-top: 10px;
 }
 
 .shareContainer{
-	width: 12%;
+	width: 120px;
 	float: right;
 	padding-top: 10px;
 }
