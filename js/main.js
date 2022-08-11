@@ -175,7 +175,7 @@ $(document).ready(function() {
 		            type: 'base64',
 		            name: 'wiki_war.jpg',
 		            title: titleBox.val(),
-		            description: 'Made using http://poisonrune.github.io/WikiWars/',
+		            description: 'Made using http://aashkir.github.io/WikiWars/',
 		            image: img
 		        },
 		        dataType: 'json'
@@ -290,7 +290,7 @@ $(document).ready(function() {
 	 	context.fillStyle = "rgb(0, 0, 0)";
 	 	context.font = "9px arial";
 	 	context.textAlign="center";
-	 	context.fillText("http://poisonrune.github.io/WikiWars/", (canvasWidth/2 + 75), canvasHeight + additionYCom + additionYStr + additionYLoss - 7);
+	 	context.fillText("http://aashkir.github.io/WikiWars/", (canvasWidth/2 + 75), canvasHeight + additionYCom + additionYStr + additionYLoss - 7);
 
 	 	// UI
 
